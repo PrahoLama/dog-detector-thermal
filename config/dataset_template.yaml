@@ -1,0 +1,24 @@
+# Dataset configuration template for dog detection
+
+# Update these paths to match your dataset location
+path: /path/to/your/dataset  # Root directory
+train: images/train          # Training images (relative to 'path')
+val: images/val              # Validation images (relative to 'path')
+test: images/test            # Test images (relative to 'path')
+
+# Number of classes
+nc: 1
+
+# Class names
+names:
+  0: dog
+
+# Dataset statistics (from our training run)
+# Training: 846 images (282 unique × 3 oversampling)
+# Validation: 56 images
+# Test: 38 images
+
+# Notes:
+# - All images should be preprocessed with blue channel extraction
+# - Labels should be in YOLO format (class x_center y_center width height)
+# - Coordinates should be normalized (0-1)
