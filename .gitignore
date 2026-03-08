@@ -1,0 +1,79 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+
+# Large dataset directories (54GB - too large for GitHub)
+rgb_channel_experiment/dog_*/
+rgb_channel_experiment/car_*/
+rgb_channel_experiment/person_*/
+
+# Keep only results and weights
+!rgb_channel_experiment/results/
+!rgb_channel_experiment/results/**/*.csv
+!rgb_channel_experiment/results/**/*.pt
+
+# Other large experiment directories
+dog_experiment/
+car_experiment/
+person_experiment/
+thermal_*_experiment/
+
+# Media files
+101MEDIA/
+102MEDIA/
+103MEDIA/
+104MEDIA/
+105MEDIA/
+107MEDIA/
+108MEDIA/
+109MEDIA/
+110MEDIA/
+MISC/
+Multispectrale/
+Randuri/
+HartiParcele/
+HartiQGIS/
+
+# Large datasets
+fused_dataset/images/
+fused_dataset/labels/
+fused_dataset/preview/
+autoannotation/
+
+# Model weights (except best models in results)
+*.pt
+!rgb_channel_experiment/results/**/best.pt
+
+# Pickle/binary files
+*.pkl
+*.json
+
+# Log files (keep only main training logs)
+*_train.log
+*_training*.log
+*monitor*.log
+dog_baseline_train.log
+dog_oversample_train.log
+dog_oversample_yolov8s_resume.log
+dog_oversample_yolov8s_train.log
+dog_ultimate_train.log
+dog_yolov8s_train.log
+person_*_train*.log
+car_*_train*.log
+thermal_*_train.log
+overnight_training.log
+continuous_monitor.log
+training_log.txt
+
+# Keep main comparison log
+!rgb_channel_comparison.log
+
+# Temp files
+*.tmp
+*.cache
+.git/index.lock
