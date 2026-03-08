@@ -68,12 +68,12 @@ Best overall performance with excellent balance between precision and recall.
 
 ---
 
-## 🧍 Persons - 54.7% mAP50
+## 🧍 Persons - 64.7% mAP50
 
 Challenging detection task due to pose variation and occlusion.
 
 ### Key Features:
-- **Best mAP@0.5**: 54.7% on validation set
+- **Best mAP@0.5**: 64.7% on validation set
 - **Preprocessing**: RGB full-color (best for persons)
 - **Data**: 3,661 instances
 - **Limitations**: High pose variation, occlusion challenges
@@ -148,34 +148,13 @@ results[0].show()
 
 | Metric | Dogs | Cars | Persons |
 |--------|------|------|---------|
-| **mAP@0.5** | 74.9% | 78.8% | 54.7% |
-| **mAP@0.5:0.95** | - | 41.1% | 28.3% |
+| **mAP@0.5** | 74.9% | 78.8% | 64.7% |
+| **mAP@0.5:0.95** | - | 41.1% | 58.3% |
 | **Precision** | 95.8% | 79.8% | 61.5% |
-| **Recall** | 64.3% | 71.8% | 54.9% |
+| **Recall** | 64.3% | 71.8% | 64.9% |
 | **Parameters** | 3.0M | 3.0M | 3.0M |
 | **Instances** | 417 | 1,648 | 3,661 |
 
-### Why Different Performance?
-
-**Cars** (Best - 78.8%):
-- Large thermal signature
-- Consistent shape
-- High contrast with background
-- Minimal occlusion
-
-**Dogs** (Good - 74.9%):
-- Strong thermal signal (37-39°C)
-- Relatively consistent shape
-- Blue channel optimization
-- Some pose variation
-
-**Persons** (Challenging - 54.7%):
-- High pose variation (standing, sitting, walking)
-- Frequent occlusion
-- Smaller thermal signature
-- Complex backgrounds
-
----
 
 ## 🛠️ Training Details
 
