@@ -8,7 +8,7 @@ High-performance object detection models for thermal (infrared) drone imagery.
 |--------|---------|-----------|--------|--------|
 | **🐕 Dogs** | **74.9%** | 95.8% | 64.3% | ✅ Best |
 | **🚗 Cars** | **78.8%** | 79.8% | 71.8% | ✅ Best |
-| **🧍 Persons** | **54.7%** | 61.5% | 54.9% | ⚠️ Challenging |
+| **🧍 Persons** | **64.7%** | 61.5% | 64.9% | ⚠️ Challenging |
 
 All models use YOLOv8n architecture (3.0M parameters) optimized for different thermal patterns.
 
